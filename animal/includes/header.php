@@ -18,7 +18,7 @@
 	session_start();
 
 	if (isset($_SESSION['username'])){
-		echo "<h1>Logged in as " . htmlspecialcharacters($_SESSION['username']) . ": </h1>";
+		echo "<h1>Logged in as " . htmlspecialchars($_SESSION['username']) . ": </h1>";
 	} else {
 		header( 'Location: index.php' );
 	}
