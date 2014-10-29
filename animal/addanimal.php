@@ -18,7 +18,7 @@ if (isset($_POST['submitted'])){
 	if (empty($_POST['name'])){
 		$errors[] = "Name not entered";
 	} else {
-		$name = $db->quote($_POST['name']);
+		$name = $_POST['name'];
 	}
 	//date of birth
 	if ($_POST['Month'] != "- Select Month -"){
