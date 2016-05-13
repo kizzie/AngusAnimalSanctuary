@@ -1,6 +1,6 @@
 node {
    // Mark the code checkout 'stage'....
-   stage 'Checkout'
+   //stage 'Checkout'
 
    def bob = tool 'N4'
 
